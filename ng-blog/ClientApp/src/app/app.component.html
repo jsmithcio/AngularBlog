@@ -1,0 +1,30 @@
+<body>
+
+  <app-nav-menu></app-nav-menu>
+
+  <div class="container">
+
+  <div id="wrap">
+    <div class="container">
+      <div class="row">
+              <div class="col-lg-8">
+                <router-outlet></router-outlet>
+              <app-pagination-widget></app-pagination-widget>
+          </div>
+        <div class="col-md-4">
+          <!--<app-search-widget></app-search-widget>-->
+          <app-categories-widget></app-categories-widget>
+          <app-side-widget></app-side-widget>
+          <!--<app-recents-widget></app-recents-widget>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <div id="push"></div>
+
+  <app-footer></app-footer>
+
+</body>

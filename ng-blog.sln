@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ng-blog", "ng-blog\ng-blog.csproj", "{AF64C1E8-DBA8-4D25-A95B-DE44669E6FCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF64C1E8-DBA8-4D25-A95B-DE44669E6FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF64C1E8-DBA8-4D25-A95B-DE44669E6FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF64C1E8-DBA8-4D25-A95B-DE44669E6FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF64C1E8-DBA8-4D25-A95B-DE44669E6FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {213ACA28-304B-48AA-9D57-5AA93CB62B34}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+
+html,
+body {
+  height: 100%;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 92%;
+  /*height: auto !important;
+  height: 100%;*/
+  /* Negative indent footer by it's height
+	margin: 0 auto -50px; */
+  margin: 0 auto -30px;
+}
+
+#push,
+#footer {
+  height: 20px;
+}
+
+#footer {
+  background-color: transparent;
+  text-align: center;
+  /*
+		position: relative;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 1.5rem;
+	*/
+}
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}

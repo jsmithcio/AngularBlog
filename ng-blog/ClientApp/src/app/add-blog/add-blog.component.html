@@ -1,0 +1,103 @@
+<h1>{{formtitle}}</h1>
+<h3>Blog Summary</h3>
+<br />
+
+<div id="wrap">
+  <form [formGroup]="blogForm" (ngSubmit)="save()" #formDir="ngForm" novalidate>
+
+    <div class="form-group row">
+      <label class=" control-label col-md-12">Title</label>
+      <div class="col-md-4">
+        <input class="form-control" type="text" formControlName="title">
+      </div>
+      <span class="text-danger" *ngIf="title?.invalid && formDir.submitted">
+        Title is required.
+      </span>
+    </div>
+
+    <!--
+      <select class="form-control" data-val="true" formControlName="author">
+        <option value="">-- Select Gender --</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    -->
+
+    <div class="form-group row">
+      <label class="control-label col-md-12" for="Author">Author</label>
+      <div class="col-md-4">
+        <input class="form-control" type="text" formControlName="author">
+      </div>
+      <span class="text-danger" *ngIf="author?.invalid && formDir.submitted">
+        Author is required
+      </span>
+    </div>
+
+    <div class="form-group row">
+      <label class="control-label col-md-12" for="Created">Created</label>
+      <div class="col-md-4">
+        <input class="form-control" type="text" formControlName="created">
+      </div>
+      <span class="text-danger" *ngIf="created?.invalid && formDir.submitted">
+        Created is required
+      </span>
+    </div>
+
+    <div class="form-group row">
+      <label class="control-label col-md-12" for="Image">Image</label>
+      <div class="col-md-4">
+        <input class="form-control" type="text" formControlName="image">
+      </div>
+      <span class="text-danger" *ngIf="image?.invalid && formDir.submitted">
+        Image is required
+      </span>
+    </div>
+
+    <div class="form-group row">
+      <label class="control-label col-md-12" for="Summary">Summary</label>
+      <div class="col-md-4">
+        <input class="form-control" type="text" formControlName="summary">
+      </div>
+      <span class="text-danger" *ngIf="summary?.invalid && formDir.submitted">
+        Summary is required
+      </span>
+    </div>
+
+    <!--
+      <div class="form-group row">
+        <label class="control-label col-md-12" for="City">City</label>
+        <div class="col-md-4">
+          <select class="form-control" data-val="true" formControlName="city">
+            <option value="">--Select City--</option>
+            <option *ngFor="let city of cityList" value={{city.cityName}}>
+              {{city.cityName}}
+            </option>
+          </select>
+        </div>
+        <span class="text-danger" *ngIf="city?.invalid && formDir.submitted">
+          City is required
+        </span>
+      </div>
+    -->
+
+    <div class="form-group row">
+      <label class="control-label col-md-12" for="Link">" Link</label>
+      <div class="col-md-4">
+        <input class="form-control" type="text" formControlName="link">
+      </div>
+      <span class="text-danger" *ngIf="link?.invalid && formDir.submitted">
+        Link is required
+      </span>
+    </div>
+
+    <div class="btn-group row">
+      <div class="col-sm-4">
+        <button type="submit" class=" btn btn-primary">Save</button>
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-danger" (click)="cancel()">Cancel</button>
+      </div>
+    </div>
+
+  </form>
+</div>

@@ -1,0 +1,75 @@
+
+
+<div *ngIf="_blogList">
+  <h1 class="my-4">Blog Summaries: {{ _blogList.blogId }} thru {{ this._pageNumber }}</h1>
+  <div *ngFor="let blog of _blogList">
+    <div class="card mb-4">
+      <img class="card-img-top" src="{{ blog.image }}" alt="Card image cap">
+      <div class="card-body">
+        <h2 class="card-title">{{ blog.title }}</h2>
+        <p class="card-text">{{ blog.summary }} </p>
+        <a (click)="gotoBlogPost(blog.blogId)" class="btn btn-primary">Read More &rarr;</a>
+      </div>
+      <div class="card-footer text-muted">
+        Posted on {{ blog.created }} by {{ blog.author }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<div *ngIf="_blogList">
+<h1 class="my-4">Blog Summaries: {{ _blogList.blogId }} thru {{ this._pageNumber }}</h1>
+  <div *ngFor="let blog of _blogList">
+    <div class="card mb-4">
+      <img class="card-img-top" src="{{ blog.image }}" alt="Card image cap">
+      <div class="card-body">
+        <h2 class="card-title">{{ blog.title }}</h2>
+        <p class="card-text">{{ blog.summary }} </p>
+        <a (click)="gotoBlogPost(blog.blogId)" class="btn btn-primary">Read More &rarr;</a>
+      </div>
+      <div class="card-footer text-muted">
+        Posted on {{ blog.created }} by {{ blog.author }}
+      </div>
+    </div>
+  </div>
+</div>-->
+
+
+<!--<p>This component demonstrates fetching Blog summaries from the server.</p>
+
+<p *ngIf="!blogList"><em>Loading...</em></p>
+
+<p>
+  <a [routerLink]="['/register-blog']">Create New</a>
+</p>
+
+<table class='table' *ngIf="blogList">
+  <thead>
+    <tr>
+      <th>BlogId</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Created</th>
+      <th>Image</th>
+      <th>Summary</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let blog of blogList">
+      <td>{{ blog.blogId }}</td>
+      <td>{{ blog.title }}</td>
+      <td>{{ blog.author }}</td>
+      <td>{{ blog.created }}</td>
+      <td>{{ blog.image }}</td>
+      <td>{{ blog.summary }}</td>
+      <td>{{ blog.link }}</td>
+      <td>
+      <td>
+        <a [routerLink]="['/blogSummary/edit/', blog.blogId]">Edit</a> |
+        <a [routerLink]="" (click)="delete(blog.blogId)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>-->
